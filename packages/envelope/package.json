@@ -1,0 +1,44 @@
+{
+  "name": "@ws-flow/envelope",
+  "version": "1.0.0",
+  "description": "Typed message envelopes and builders for the ws-flow event, request and stream protocol.",
+  "keywords": [
+    "ws-flow",
+    "websocket",
+    "protocol",
+    "envelope"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "type": "module",
+  "author": "Mr_Pardon",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node ../../scripts/build-package.mjs",
+    "prepack": "pnpm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mr-Pardon/ws-flow.git",
+    "directory": "packages/envelope"
+  },
+  "homepage": "https://github.com/Mr-Pardon/ws-flow/tree/main/packages/envelope#readme",
+  "bugs": {
+    "url": "https://github.com/Mr-Pardon/ws-flow/issues"
+  }
+}

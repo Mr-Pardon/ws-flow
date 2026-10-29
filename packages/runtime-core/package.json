@@ -1,0 +1,51 @@
+{
+  "name": "@ws-flow/runtime-core",
+  "version": "1.0.0",
+  "description": "Shared protocol adapters and lifecycle management for ws-flow events, requests and streams.",
+  "keywords": [
+    "websocket",
+    "ws-flow",
+    "protocol",
+    "rpc",
+    "stream"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "type": "module",
+  "author": "Mr_Pardon",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@ws-flow/consumer": "workspace:*",
+    "@ws-flow/envelope": "workspace:*",
+    "@ws-flow/pipeline": "workspace:*",
+    "@ws-flow/scheduler": "workspace:*"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node ../../scripts/build-package.mjs",
+    "prepack": "pnpm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mr-Pardon/ws-flow.git",
+    "directory": "packages/runtime-core"
+  },
+  "homepage": "https://github.com/Mr-Pardon/ws-flow/tree/main/packages/runtime-core#readme",
+  "bugs": {
+    "url": "https://github.com/Mr-Pardon/ws-flow/issues"
+  }
+}

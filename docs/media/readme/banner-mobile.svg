@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="620" viewBox="0 0 640 620" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">ws-flow — One connection. Both directions.</title>
+  <desc id="desc">The teal and deep-pine woven-flow mark appears on warm white above event, request and stream paths. ws-flow supports browsers and Node.js.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="640" y2="620" gradientUnits="userSpaceOnUse"><stop stop-color="#10231e"/><stop offset="1" stop-color="#183a2d"/></linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#b7d9c3" fill-opacity=".15"/></pattern>
+    <marker id="arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 6 4 1 7" stroke="#d7f3c3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect x="1" y="1" width="638" height="618" rx="28" fill="url(#surface)" stroke="#355547"/>
+  <path d="M29 1H611A28 28 0 0 1 639 29V283H1V29A28 28 0 0 1 29 1Z" fill="#f6f5f1"/>
+  <rect x="44" y="283" width="552" height="260" fill="url(#dots)"/>
+  <g id="woven-flow" transform="translate(44 40) scale(.3)">
+      <path fill="#14342c" d="M215 81L255 36C273 17 294 6 322 5C343 4 365 11 380 23C404 45 412 76 411 106V169Q409 173 400 171C387 169 378 160 365 147L333 113C315 89 301 68 283 64C259 58 240 73 225 91L215 81ZM4 82C22 75 32 79 45 86C65 99 83 126 104 147C120 164 133 170 152 161L160 169L135 201C116 225 91 229 68 221C49 215 38 193 27 174C11 145 4 128 4 107V82Z"/>
+      <path fill="#2c675d" d="M4 64C10 38 32 14 61 7C92-1 121 9 140 23C156 35 170 53 187 70L259 148C271 162 281 170 294 169C307 168 319 152 334 138L377 184L346 218C330 234 306 242 279 241C255 240 231 230 211 209L103 95C82 73 65 64 48 61C33 58 19 60 4 64Z"/>
+    </g>
+  <g font-family="'Segoe UI', Arial, sans-serif">
+    <text x="187" y="107" font-size="76" font-weight="700" letter-spacing="-4" fill="#14342c">ws-flow</text>
+    <text x="45" y="151" font-size="17" font-weight="600" letter-spacing="2.1" fill="#657d70">WEBSOCKET, WITH A FLOW.</text>
+    <text x="44" y="211" font-size="36" font-weight="450" letter-spacing="-.8" fill="#14342c">One connection.</text>
+    <text x="44" y="255" font-size="36" font-weight="450" letter-spacing="-.8" fill="#2c675d">Both directions.</text>
+    <text x="46" y="307" font-size="16" letter-spacing="1.5" font-weight="600" fill="#a6c4b4">CLIENT</text>
+    <text x="516" y="307" font-size="16" letter-spacing="1.5" font-weight="600" fill="#a6c4b4">SERVER</text>
+    <path d="M70 330V530M568 330V530" stroke="#a2c7b1" stroke-opacity=".22" stroke-dasharray="2 6"/>
+    <g font-family="Consolas, 'SFMono-Regular', monospace" font-size="19">
+      <path d="M70 351H561" stroke="#c8e7b9" stroke-width="2" marker-end="url(#arrow)"/>
+      <circle cx="70" cy="351" r="5" fill="#d7f3c3"/>
+      <rect x="212" y="332" width="216" height="38" rx="11" fill="#274431" stroke="#759b74"/>
+      <text x="320" y="358" text-anchor="middle" fill="#e5f3d9">event:status</text>
+      <path d="M70 416H561" stroke="#d7f3c3" stroke-width="2" marker-end="url(#arrow)"/>
+      <path d="M568 459H77" stroke="#83bfaa" stroke-width="2" stroke-dasharray="5 6" marker-end="url(#arrow)"/>
+      <rect x="185" y="397" width="220" height="38" rx="10" fill="#d7f3c3"/>
+      <text x="295" y="423" text-anchor="middle" fill="#18362a">request #42</text>
+      <rect x="248" y="440" width="224" height="38" rx="10" fill="#1a3d32" stroke="#5b9c87"/>
+      <text x="360" y="466" text-anchor="middle" fill="#c5e6d7">response #42</text>
+      <path d="M568 520H77" stroke="#c8e7b9" stroke-width="2" marker-end="url(#arrow)"/>
+      <g fill="#2b4c39" stroke="#7b9e79"><rect x="221" y="502" width="58" height="36" rx="9"/><rect x="291" y="502" width="58" height="36" rx="9"/><rect x="361" y="502" width="58" height="36" rx="9"/></g>
+      <g fill="#e3f0d8" text-anchor="middle"><text x="250" y="527">01</text><text x="320" y="527">02</text><text x="390" y="527">03</text></g>
+    </g>
+    <text x="320" y="582" text-anchor="middle" font-size="16" font-weight="600" letter-spacing="1" fill="#b7cbbf">TYPESCRIPT · NODE.JS &amp; BROWSER · MIT</text>
+  </g>
+  <rect x="1" y="1" width="638" height="618" rx="28" stroke="#cedbd1"/>
+</svg>

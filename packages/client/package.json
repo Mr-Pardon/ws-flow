@@ -1,0 +1,76 @@
+{
+  "name": "@ws-flow/client",
+  "version": "2.0.0",
+  "description": "A lightweight WebSocket client with subscriptions, bidirectional requests and streams for browsers and Node.js.",
+  "keywords": [
+    "websocket",
+    "client",
+    "browser",
+    "rpc",
+    "stream"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "type": "module",
+  "author": "Mr_Pardon",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "browser": {
+        "types": "./dist/browser.d.ts",
+        "import": "./dist/browser.js"
+      },
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./browser": {
+      "types": "./dist/browser.d.ts",
+      "import": "./dist/browser.js"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "import": "./dist/node.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node ../../scripts/build-package.mjs",
+    "prepack": "pnpm run build"
+  },
+  "dependencies": {
+    "@ws-flow/scheduler": "workspace:*",
+    "@ws-flow/runtime-core": "workspace:*"
+  },
+  "peerDependencies": {
+    "ws": "^8.19.0"
+  },
+  "peerDependenciesMeta": {
+    "ws": {
+      "optional": true
+    }
+  },
+  "browser": "./dist/browser.js",
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "ws": "^8.19.0",
+    "@types/ws": "^8.18.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mr-Pardon/ws-flow.git",
+    "directory": "packages/client"
+  },
+  "homepage": "https://github.com/Mr-Pardon/ws-flow/tree/main/packages/client#readme",
+  "bugs": {
+    "url": "https://github.com/Mr-Pardon/ws-flow/issues"
+  }
+}

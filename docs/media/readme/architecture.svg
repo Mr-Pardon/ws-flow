@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">ws-flow：共享任务语义，清晰的扩展边界</title>
+  <desc id="desc">Client 与 Server 分别运行共享的 RuntimeCore 实现，统一订阅、请求、流与生命周期。Codec 属于连接宿主；ProtocolAdapter 解释消息，Pipeline 组合处理规则，Scheduler 安排帧执行。此图表达模块组成，不表示两端连接同一个远程核心服务。</desc>
+  <defs><marker id="arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 6 4 1 7" stroke="#659080" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+  <rect x="1" y="1" width="1198" height="518" rx="24" fill="#f3f6ef" stroke="#d9e2d7"/>
+  <g font-family="'Segoe UI', 'Microsoft YaHei', 'PingFang SC', Arial, sans-serif">
+    <text x="44" y="38" fill="#647a6b" font-size="12" font-weight="600" letter-spacing="2">A SHARED RUNTIME. CLEAR BOUNDARIES.</text>
+    <text x="44" y="81" fill="#18392d" font-size="30" font-weight="600">让每一层，专注自己的职责。</text>
+    <rect x="44" y="111" width="534" height="76" rx="12" fill="#fffefa" stroke="#d1dfd1"/>
+    <rect x="622" y="111" width="534" height="76" rx="12" fill="#fffefa" stroke="#d1dfd1"/>
+    <text x="66" y="143" font-size="22" font-weight="650" fill="#18392d">Client</text>
+    <text x="66" y="169" font-size="16" fill="#5d7465">Browser WebSocket · Node ws</text>
+    <text x="644" y="143" font-size="22" font-weight="650" fill="#18392d">Server</text>
+    <text x="644" y="169" font-size="16" fill="#5d7465">Session · Sender · Node ws</text>
+    <g fill="#e8eee2"><rect x="448" y="134" width="106" height="31" rx="15.5"/><rect x="1026" y="134" width="106" height="31" rx="15.5"/></g>
+    <g fill="#45614d" font-size="15" font-weight="600" text-anchor="middle"><text x="501" y="155">Codec</text><text x="1079" y="155">Codec</text></g>
+    <g stroke="#659080" stroke-width="1.5" marker-end="url(#arrow)">
+      <path d="M303 190V211"/>
+      <path d="M319 211V190"/>
+      <path d="M881 190V211"/>
+      <path d="M897 211V190"/>
+    </g>
+    <rect x="44" y="218" width="1112" height="139" rx="14" fill="#173e30"/>
+    <text x="69" y="255" font-size="26" font-weight="650" letter-spacing="-.4" fill="#f3f6eb">RuntimeCore</text>
+    <text x="1129" y="253" text-anchor="end" font-size="16" fill="#bfd6c2">共享同一套实现 · 分别运行于两端宿主</text>
+    <path d="M69 273H1130" stroke="#a2c7a6" stroke-opacity=".25"/>
+    <g fill="#e4f1d7" font-size="20" font-weight="600"><text x="69" y="307">事件订阅</text><text x="343" y="307">请求响应</text><text x="617" y="307">流式任务</text><text x="891" y="307">生命周期</text></g>
+    <g fill="#b9cebc" font-size="15"><text x="69" y="334">筛选与独立消费</text><text x="343" y="334">关联请求与结果</text><text x="617" y="334">推进分片与终态</text><text x="891" y="334">超时、取消与清理</text></g>
+    <path d="M600 357V377M221 377H979M221 377V391M600 377V391M979 377V391" stroke="#91ad98" stroke-width="1.5"/>
+    <circle cx="221" cy="377" r="3" fill="#6f947b"/><circle cx="600" cy="377" r="3" fill="#6f947b"/><circle cx="979" cy="377" r="3" fill="#6f947b"/>
+    <g fill="#e6eee0" stroke="#d0deca"><rect x="44" y="392" width="354" height="75" rx="12"/><rect x="423" y="392" width="354" height="75" rx="12"/><rect x="802" y="392" width="354" height="75" rx="12"/></g>
+    <g fill="#244936" font-size="20" font-weight="650"><text x="65" y="422">ProtocolAdapter</text><text x="444" y="422">Pipeline</text><text x="823" y="422">Scheduler</text></g>
+    <g fill="#5b725f" font-size="16"><text x="65" y="449">解释事件、请求与流的语义</text><text x="444" y="449">组合公共消息处理规则</text><text x="823" y="449">安排帧的顺序、排队与并发</text></g>
+    <text x="600" y="497" text-anchor="middle" fill="#637b68" font-size="15">Codec 负责宿主编解码；协议、管线与调度通过明确接口协作。</text>
+  </g>
+</svg>

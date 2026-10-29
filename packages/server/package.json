@@ -1,0 +1,65 @@
+{
+  "name": "@ws-flow/server",
+  "version": "1.0.0",
+  "description": "A WebSocket server with event subscriptions, bidirectional requests, streams and middleware.",
+  "keywords": [
+    "websocket",
+    "server",
+    "rpc",
+    "stream",
+    "middleware"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "type": "module",
+  "author": "Mr_Pardon",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./core": {
+      "types": "./dist/core/index.d.ts",
+      "import": "./dist/core/index.js"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node ../../scripts/build-package.mjs",
+    "prepack": "pnpm run build"
+  },
+  "dependencies": {
+    "@ws-flow/consumer": "workspace:*",
+    "@ws-flow/envelope": "workspace:*",
+    "@ws-flow/pipeline": "workspace:*",
+    "@ws-flow/scheduler": "workspace:*",
+    "@ws-flow/runtime-core": "workspace:*",
+    "ws": "^8.19.0",
+    "@types/ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mr-Pardon/ws-flow.git",
+    "directory": "packages/server"
+  },
+  "homepage": "https://github.com/Mr-Pardon/ws-flow/tree/main/packages/server#readme",
+  "bugs": {
+    "url": "https://github.com/Mr-Pardon/ws-flow/issues"
+  }
+}

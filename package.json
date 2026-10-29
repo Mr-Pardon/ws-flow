@@ -1,0 +1,40 @@
+{
+  "name": "ws-flow",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "WebSocket event subscriptions, bidirectional requests and streaming tasks for Node.js and browsers.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "format": "node scripts/format.mjs",
+    "format:check": "node scripts/format.mjs --check",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "check-types": "tsc --noEmit",
+    "test": "pnpm run build && node --test tests/*.test.mjs",
+    "verify-packages": "pnpm run build && node scripts/verify-packages.mjs",
+    "verify-browser": "pnpm run build && node scripts/verify-browser.mjs",
+    "example:duplex": "pnpm run build && node examples/duplex.mjs",
+    "example:generic": "pnpm run build && node examples/generic-client.mjs",
+    "example:cancel": "pnpm run build && node examples/cancellable-task.mjs",
+    "docs:dev": "vitepress dev docs --host 127.0.0.1",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [],
+  "author": "Mr_Pardon",
+  "license": "MIT",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "esbuild": "0.27.7",
+    "prettier": "3.6.2",
+    "turbo": "^2.9.6",
+    "typescript": "^5.9.3",
+    "vitepress": "1.6.4",
+    "vue": "3.5.30"
+  }
+}

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">ws-flow — One connection. Both directions.</title>
+  <desc id="desc">The ws-flow woven-flow mark uses teal and deep pine on warm white. Three message paths illustrate event subscriptions, correlated requests and streaming results.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1200" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#10231e"/><stop offset="1" stop-color="#132d26"/></linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(970 130) rotate(143) scale(540 370)" gradientUnits="userSpaceOnUse"><stop stop-color="#317c61" stop-opacity=".28"/><stop offset="1" stop-color="#317c61" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#b7d9c3" fill-opacity=".12"/></pattern>
+    <linearGradient id="fade" x1="510" y1="0" x2="1199" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#d7f3c3" stop-opacity="0"/><stop offset=".6" stop-color="#d7f3c3" stop-opacity=".12"/><stop offset="1" stop-color="#d7f3c3" stop-opacity="0"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 6 4 1 7" stroke="#d7f3c3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <clipPath id="clip"><rect x="1" y="1" width="1198" height="438" rx="26"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="440" fill="url(#surface)"/>
+    <rect width="1200" height="440" fill="url(#glow)"/>
+    <rect width="492" height="440" fill="#f6f5f1"/>
+    <rect x="510" y="48" width="640" height="340" fill="url(#dots)"/>
+    <path d="M510 48H1152M510 388H1152" stroke="url(#fade)"/>
+    <path d="M492 56V384" stroke="#d7f3c3" stroke-opacity=".12"/>
+    <g id="woven-flow" transform="translate(52 57) scale(.27)">
+      <path fill="#14342c" d="M215 81L255 36C273 17 294 6 322 5C343 4 365 11 380 23C404 45 412 76 411 106V169Q409 173 400 171C387 169 378 160 365 147L333 113C315 89 301 68 283 64C259 58 240 73 225 91L215 81ZM4 82C22 75 32 79 45 86C65 99 83 126 104 147C120 164 133 170 152 161L160 169L135 201C116 225 91 229 68 221C49 215 38 193 27 174C11 145 4 128 4 107V82Z"/>
+      <path fill="#2c675d" d="M4 64C10 38 32 14 61 7C92-1 121 9 140 23C156 35 170 53 187 70L259 148C271 162 281 170 294 169C307 168 319 152 334 138L377 184L346 218C330 234 306 242 279 241C255 240 231 230 211 209L103 95C82 73 65 64 48 61C33 58 19 60 4 64Z"/>
+    </g>
+    <g font-family="'Segoe UI', Arial, sans-serif">
+      <text x="181" y="115" font-size="65" font-weight="700" letter-spacing="-3.4" fill="#14342c">ws-flow</text>
+      <text x="54" y="161" font-size="12" font-weight="600" letter-spacing="2.5" fill="#657d70">WEBSOCKET, WITH A FLOW.</text>
+      <text x="52" y="245" font-size="34" font-weight="450" letter-spacing="-.9" fill="#14342c">One connection.</text>
+      <text x="52" y="288" font-size="34" font-weight="450" letter-spacing="-.9" fill="#2c675d">Both directions.</text>
+      <path d="M54 335H438" stroke="#b6cabc"/>
+      <text x="54" y="369" font-size="12" font-weight="600" letter-spacing="1.2" fill="#586f60">TYPESCRIPT</text>
+      <circle cx="163" cy="365" r="2" fill="#7c9b86"/>
+      <text x="179" y="369" font-size="12" font-weight="600" letter-spacing="1.2" fill="#586f60">NODE.JS &amp; BROWSER</text>
+      <circle cx="353" cy="365" r="2" fill="#7c9b86"/>
+      <text x="369" y="369" font-size="12" font-weight="600" letter-spacing="1.2" fill="#586f60">MIT</text>
+      <text x="544" y="83" font-size="12" letter-spacing="2" font-weight="600" fill="#91b7a4">CLIENT</text>
+      <text x="1077" y="83" font-size="12" letter-spacing="2" font-weight="600" fill="#91b7a4">SERVER</text>
+      <path d="M568 109V353M1105 109V353" stroke="#9bc6ae" stroke-opacity=".18" stroke-dasharray="2 6"/>
+      <g font-family="Consolas, 'SFMono-Regular', monospace">
+        <text x="626" y="126" font-size="12" fill="#a1bcae">01 / EVENTS</text>
+        <path d="M568 153H958" stroke="#9acb9f" stroke-width="1.8" marker-end="url(#arrow)"/>
+        <circle cx="568" cy="153" r="5" fill="#d7f3c3"/>
+        <rect x="708" y="140" width="110" height="27" rx="13.5" fill="#243e31" stroke="#537a5d"/>
+        <text x="763" y="158" text-anchor="middle" font-size="12" fill="#e3f2d5">event:status</text>
+        <path d="M968 153H989Q1000 153 1000 142V130Q1000 121 1010 121H1089M968 153H1089M968 153H989Q1000 153 1000 164V176Q1000 185 1010 185H1089" stroke="#9acb9f" stroke-width="1.5"/>
+        <circle cx="1105" cy="121" r="7" fill="#9acb9f"/><circle cx="1105" cy="153" r="7" fill="#9acb9f"/><circle cx="1105" cy="185" r="7" fill="#9acb9f"/>
+        <text x="626" y="219" font-size="12" fill="#a1bcae">02 / REQUESTS</text>
+        <path d="M568 242H1100" stroke="#d7f3c3" stroke-width="1.8" marker-end="url(#arrow)"/>
+        <path d="M1105 276H573" stroke="#78baa7" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+        <circle cx="568" cy="242" r="5" fill="#d7f3c3"/>
+        <rect x="732" y="229" width="116" height="26" rx="7" fill="#d7f3c3"/>
+        <text x="790" y="247" text-anchor="middle" font-size="12" fill="#18362a">request #42</text>
+        <rect x="813" y="263" width="126" height="26" rx="7" fill="#1a3d32" stroke="#5b9c87"/>
+        <text x="876" y="281" text-anchor="middle" font-size="12" fill="#c5e6d7">response #42</text>
+        <text x="626" y="320" font-size="12" fill="#a1bcae">03 / STREAMS</text>
+        <path d="M1105 345H573" stroke="#c7dfc0" stroke-width="1.8" marker-end="url(#arrow)"/>
+        <circle cx="1105" cy="345" r="5" fill="#d7f3c3"/>
+        <g fill="#2b4c39" stroke="#7b9e79"><rect x="694" y="333" width="54" height="25" rx="6"/><rect x="765" y="333" width="54" height="25" rx="6"/><rect x="836" y="333" width="54" height="25" rx="6"/></g>
+        <g fill="#e3f0d8" font-size="12" text-anchor="middle"><text x="721" y="350">01</text><text x="792" y="350">02</text><text x="863" y="350">03</text></g>
+      </g>
+    </g>
+  </g>
+  <rect x="1" y="1" width="1198" height="438" rx="26" stroke="#cedbd1"/>
+</svg>
